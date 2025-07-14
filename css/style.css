@@ -1,0 +1,120 @@
+body {
+  font-family: "Gowun Batang", serif;
+  background-image: linear-gradient(to bottom, #fdfdfd, #f3f3f3);
+}
+
+/* Dark mode styles */
+.dark {
+    background-color: #111827;
+    color: white;
+    background-image: linear-gradient(to bottom, #111827, #1f2937);
+}
+
+.dark nav {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+.dark nav a {
+    color: #d1d5db;
+}
+
+.dark nav a:hover {
+    color: white;
+}
+
+.dark #darkModeToggle {
+    background-color: #374151;
+}
+
+.dark #darkModeToggle:hover {
+    background-color: #4b5563;
+}
+
+.dark .bg-white {
+    background-color: #1f2937 !important;
+}
+
+.dark .text-black {
+    color: #f9fafb !important;
+}
+
+.dark .text-gray-600 {
+    color: #9ca3af !important;
+}
+
+.dark .text-gray-700 {
+    color: #d1d5db !important;
+}
+
+.dark .border-gray-300 {
+    border-color: #4b5563 !important;
+}
+
+.dark .bg-gray-50 {
+    background-color: #374151 !important;
+}
+
+.dark .bg-neutral-300 {
+    background-color: #4b5563 !important;
+}
+
+.dark .text-gray-800 {
+    color: #e5e7eb !important;
+}
+
+.dark .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark .ring-gray-300 {
+    --tw-ring-color: #4b5563 !important;
+}
+
+.dark .bg-gray-200 {
+    background-color: #4b5563 !important;
+}
+
+.dark .bg-black {
+    background-color: #6b7280 !important;
+}
+
+.dark h1, .dark h2, .dark h3 {
+    color: #f9fafb !important;
+}
+
+/* Portfolio card animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.portfolio-card {
+    cursor: pointer;
+}
+
+/* Gradient overlay effect */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.portfolio-card:hover .gradient-overlay {
+    left: 100%;
+}
+
