@@ -1,0 +1,5 @@
+/* 기본 폰트와 부드러운 애니메이션 추가 */
+body {
+  font-family: "Gowun Batang", serif;
+  background-image: linear-gradient(to bottom, #fdfdfd, #f3f3f3);
+}
