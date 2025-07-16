@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>방명록</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/common.js" defer></script>
+    <script src="../js/guestbook.js" defer></script>
+</head>
+
+<body class="text-black min-h-screen transition-colors duration-300">
+    <div id="header"></div>
+
+    <div class="p-6 flex items-center justify-center">
+        <div class="bg-white p-10 rounded-2xl shadow-2xl max-w-4xl w-full space-y-8">
+            <h1 class="text-4xl font-bold text-center">방명록</h1>
+
+            <!-- 방명록 입력 -->
+            <section class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">방명록 작성</h2>
+                <div class="space-y-4">
+                    <input type="text" id="nameInput" placeholder="이름을 입력하세요"
+                        class="w-full p-3 border rounded-lg text-sm">
+                    <textarea id="messageInput" placeholder="메시지를 입력하세요"
+                        class="w-full p-3 border rounded-lg text-sm h-24"></textarea>
+                    <div class="text-right">
+                        <button id="addBtn"
+                            class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                            등록
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 방명록 목록 -->
+            <section class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">방명록 목록</h2>
+                <div id="guestList" class="space-y-4">
+                    <!-- 방명록 항목들이 여기에 추가됩니다 -->
+                </div>
+                <div id="emptyMessage" class="text-center text-gray-500 py-8">
+                    아직 작성된 방명록이 없습니다.
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

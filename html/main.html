@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전면수 - 자기소개</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/common.js" defer></script>
+    <script src="../js/main.js" defer> </script>
+</head>
+
+<body class="text-black min-h-screen transition-colors duration-300">
+    <div id="header"></div>
+
+    <main class="p-6 flex items-center justify-center min-h-[calc(100vh-160px)]">
+        <article class="bg-white p-10 rounded-2xl shadow-2xl max-w-5xl w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- 좌측: 프로필 사진 + 이름 -->
+            <aside class="col-span-1 flex flex-col items-center">
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&fit=crop"
+                    alt="프로필 사진"
+                    class="w-[200px] h-[250px] object-cover rounded-xl ring-1 ring-gray-300 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:ring-2 hover:ring-gray-500" />
+                <header class="text-center">
+                    <h1 class="text-4xl font-bold mt-6">전면수</h1>
+                    <p class="text-lg mt-2 text-gray-600">0000.06.10 / 105세</p>
+                    <address class="text-base text-gray-600 not-italic">010.1234.5678</address>
+                    <address class="text-sm text-gray-600 not-italic">testmail@naver.com</address>
+                    <a href="portfolio.html"
+                        class="inline-block mt-4 px-4 py-2 bg-neutral-300 text-gray-800 rounded-full shadow hover:bg-neutral-400 transition-transform duration-300 transform hover:scale-105">
+                        포트폴리오
+                    </a>
+                </header>
+            </aside>
+
+            <!-- 우측: 내용 -->
+            <div class="col-span-2 space-y-6">
+                <section>
+                    <h2 class="text-3xl font-semibold border-b border-gray-300 mb-2">About me</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        문제 해결 중심의 사고와 협업을 중시하는 자바 개발자입니다.<br>
+                        Spring Boot, JPA, 그리고 RESTful API 설계에 익숙하며,<br>
+                        안정성과 유지보수성을 고려한 백엔드 구조 설계를 지향합니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold border-b border-gray-300 mb-2">Education</h2>
+                    <ul class="text-sm text-gray-700 list-disc ml-4 space-y-1">
+                        <li>2025.07 구름 딥다이브 자바 스프링 백엔드 과정</li>
+                        <li>2025.07 구글 딥다이브 풀스택 과정</li>
+                    </ul>
+                    <audio controls class="mt-3 w-full">
+                        <source src="../media/introduce.mp3" type="audio/mpeg">
+                        브라우저가 오디오를 지원하지 않습니다.
+                    </audio>
+                    <p class="text-xs text-gray-500 mt-1">교육 과정 소개 음성</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 mb-2">Work</h2>
+                    <ul class="text-sm text-gray-700 list-disc ml-4 space-y-1">
+                        <li>2000.00~2000.00 제일모직 MES</li>
+                        <li>2000.00~2000.00 포스코엔지니어링 자료관리</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 mb-2">Skills</h2>
+                    <table class="w-full text-sm text-gray-700">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="text-left py-2">기술</th>
+                                <th class="text-left py-2">숙련도</th>
+                                <th class="text-left py-2">경험</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-2">Java</td>
+                                <td class="py-2">⭐⭐⭐⭐⭐</td>
+                                <td class="py-2">3년</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-2">Javascript</td>
+                                <td class="py-2">⭐⭐⭐⭐</td>
+                                <td class="py-2">2년</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-2">Python</td>
+                                <td class="py-2">⭐⭐⭐</td>
+                                <td class="py-2">1년</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 mb-2">소개 영상</h2>
+                    <iframe class="w-full aspect-video rounded" src="https://www.youtube.com/embed/GX9j-sOzV2Q"
+                        title="소개 영상" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 mb-2">GitHub</h2>
+                    <iframe src="https://github.com/junmyunsu" class="w-full h-32 border rounded"
+                        title="GitHub 프로필"></iframe>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 mb-2">연락하기</h2>
+                    <form id="contactForm" class="space-y-3">
+                        <input type="text" name="name" placeholder="이름" class="w-full p-2 border rounded text-sm"
+                            required>
+                        <input type="email" name="email" placeholder="이메일" class="w-full p-2 border rounded text-sm"
+                            required>
+                        <textarea name="message" placeholder="메시지" class="w-full p-2 border rounded text-sm h-16"
+                            required></textarea>
+                        <div class="text-right">
+                            <button type="submit"
+                                class="px-4 py-2 bg-black text-white rounded text-sm hover:bg-gray-800">전송</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- 모달 -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg max-w-md w-full mx-4">
+            <h3 class="text-lg font-bold mb-4">메시지 전송 완료</h3>
+            <div id="modalContent" class="space-y-2 text-sm text-gray-700"></div>
+            <div class="text-right mt-4">
+                <button id="closeModal" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">닫기</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
