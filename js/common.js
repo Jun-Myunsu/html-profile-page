@@ -1,20 +1,27 @@
 // 공통 컴포넌트 로드 함수
-async function loadComponent(elementId, filePath) {
-  try {
-    const response = await fetch(filePath);
-    const html = await response.text();
-    document.getElementById(elementId).innerHTML = html;
-  } catch (error) {
-    console.error("컴포넌트 로드 실패:", error);
-  }
-}
+// async function loadComponent(elementId, filePath) {
+//   try {
+//     const response = await fetch(filePath);
+//     const html = await response.text();
+//     document.getElementById(elementId).innerHTML = html;
+//   } catch (error) {
+//     console.error("컴포넌트 로드 실패:", error);
+//   }
+// }
 
 // 페이지 로드 시 실행
-document.addEventListener("DOMContentLoaded", async () => {
-  await loadComponent("header", "/html/common/header.html");
-  await loadComponent("footer", "/html/common/footer.html");
-  initDarkMode();
-});
+// document.addEventListener("DOMContentLoaded", async () => {
+//   await loadComponent("header", "/html/common/header.html");
+//   await loadComponent("footer", "/html/common/footer.html");
+//   initDarkMode();
+// });
+
+import { headerHTML } from "/components/header.js";
+import { footerHTML } from "/components/footer.js";
+
+// 컴포넌트 로드
+document.getElementById("header").innerHTML = headerHTML;
+document.getElementById("footer").innerHTML = footerHTML;
 
 // 다크 모드 초기화 함수
 function initDarkMode() {
