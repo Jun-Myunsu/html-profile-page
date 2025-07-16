@@ -43,3 +43,5 @@ function initDarkMode() {
     localStorage.setItem("darkMode", isDark);
   });
 }
+
+initDarkMode();
